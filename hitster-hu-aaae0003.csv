@@ -1,7 +1,7 @@
 Card#,Artist,Title,Year,URL,Youtube-Title,Hashed Info
 1,Billy Joel,Uptown Girl,1983,https://www.youtube.com/watch?v=H6M0EulApMM,Uptown Girl,d4f64fa1274940c1b2f011c5e310d3933196a8cdec3c3376b5fad93aaaad12f7
 2,Scatman John,Scatman (Ski-Ba-Bop-Ba-Dop-Bop),1995,https://www.youtube.com/watch?v=VnULE-d14TA,Scatman (Ski-Ba-Bop-Ba-Dop-Bop),c8bdac5b91c454dbf1c03563961c1bb26009f8ad2df9afde3b4a49bbeb26b316
-3,The B-52's,Love Shack,1989,https://www.youtube.com/watch?v=7puAydZ5Fbo,Love Shack (Edit) (2019 Remaster),a4df4ee10c222b19b526cc62bc94ed4100cb73f9dbf5712e6b659ae69f167797
+3,The B-52's,Love Shack,1989,https://www.youtube.com/watch?v=7puAydZ5Fbo,Love Shack (Edit) [2019 Remaster],1991c8b7416e8aa3d6459339e722261bbd2297a50eec7037ee21de41e4f01d1a
 4,Omega,Nem tudom a neved,1974,https://www.youtube.com/watch?v=X-cEwyJ0ULc,Nem tudom a neved,24da241292e2f2423d968130edd6ace409b168aa301c74ff14812e47bc65eb12
 5,Black Eyed Peas and J Balvin,Ritmo,2019,https://www.youtube.com/watch?v=nKGJ_7WBREU,RITMO (Bad Boys For Life),837cc4a77675cf919f3ee3c3bf8b36875b6fa9d591f4dde58703da493191468c
 6,Imagine Dragons,Believer,2017,https://www.youtube.com/watch?v=doTaxdlF9Zs,Believer,8fcc2c6209867dd25483f40989ff94243bd09efb8ad4dfaf66672a379f052780
@@ -156,7 +156,7 @@ Card#,Artist,Title,Year,URL,Youtube-Title,Hashed Info
 155,R-Go,Szeretlek is + nem is,1985,https://www.youtube.com/watch?v=O3WJwT4XjqU,Szeretlek is + nem is,8fd95a2f603ffdeb4ddf1e3e9f2252ca8255c2d85c480c560e668c46fff65962
 156,Kid Laroi & Justin Bieber,Stay,2021,https://www.youtube.com/watch?v=XfEMj-z3TtA,STAY,80e4385ce6cadc66f4986af7609a2f167f78c2d067888c03cbd10b5881ea6333
 157,Hooligans,Királylány,2003,https://www.youtube.com/watch?v=9K33KW8pX2I,Királylány,1423aa1f87a2379f78fab3134c492298e9be8aa535d891023582d865ab5903e8
-158,Gala Rizzato,Freed from Desire,1996,https://www.youtube.com/watch?v=Qvu033SBMYU,"Freed From Desire (prod. Molella, Phil Jay)",63e7e2587d9d97723a7a391589d065349837e7cb5f65173d3eec84eb4304b3ca
+158,Gala Rizzato,Freed from Desire,1996,https://www.youtube.com/watch?v=Qvu033SBMYU,Freed From Desire,e1c423c057d798364efe4fac194034ee204c6cffecbf722d0833fc81a0037310
 159,Olivia Newton-John,Physical,1981,https://www.youtube.com/watch?v=4LjNxtwf7jo,Physical (Long Version / Remastered 2021),145b7df0b0838648ba72577464775eb3ea5a0a3107acac4fe1ace65e3c1ee10a
 160,Barbra Streisand,Woman in Love,1980,https://www.youtube.com/watch?v=ryGlgkvqzKE,Woman in Love,09e3d7014af9d9b3813ffa7b28d69fbbddc1fa016c322d52b45798009f7ef248
 161,Micheal Jackson,Billie Jean,1982,https://www.youtube.com/watch?v=Kr4EQDVETuA,Billie Jean,7d581bf2b47ddb21839bdbe9da4ca6f48ba6078dbf98ff618b16c0f22cef2726
@@ -243,7 +243,7 @@ Card#,Artist,Title,Year,URL,Youtube-Title,Hashed Info
 242,Wolf Kati,"Szerelem, miért múlsz?",2011,https://www.youtube.com/watch?v=WYNF-lf-zH4,"Szerelem, miért múlsz?",f601f54a038473c0f2fba5fa215c998154bb7f9bb8457180660cac731e160d1d
 243,Depeche Mode,Enjoy the Silence,1990,https://www.youtube.com/watch?v=ojvldIzbaMo,Enjoy the Silence,942ca6991055e76a1390827a6922cf1aeb0933e4a8849f70e6a3678b4249cda0
 244,Kate Ryan,Ella Elle l'A,2008,https://www.youtube.com/watch?v=jqw4g3QaHWY,Ella Elle L A (Radio Version),d0d1c9c9f8b16f4113de05cab011826e9d336b707c1bad158d9d7d13f7ae742f
-245,The Mamas & The Papas,California Dreamin',1965,https://www.youtube.com/watch?v=oU6uUEwZ8FM,California Dreamin',2b5149cef04c5ebd961d5bbeb25ccaa0d58450405c149b36256e480a2152f2c0
+245,The Mamas & The Papas,California Dreamin',1965,https://www.youtube.com/watch?v=oU6uUEwZ8FM,California Dreamin' (Single Version),d63ca49ed726434d6c3cd9b33a4b085da5655eac29899aedb4de11ca3696ee7f
 246,Punnany Massif,Élvezd,2011,https://www.youtube.com/watch?v=9yU2iHQjqtw,Élvezd,ae6d07ed2dbdf4b031fc3c819dcc9a827bac78d0d07f3174ff048c6e5d1c4504
 247,Betonhofi,Bagira,2022,https://www.youtube.com/watch?v=Xao8pLbPCcA,BAGIRA,67e8038f9414a5ebbbe25b5acfa0f84c025560af04930f31355100166018c279
 248,Zalatnay Sarolta,"Hosszú, forró nyár",1974,https://www.youtube.com/watch?v=NscIV_GkyRY,Zalatnay Sarolta: Várlak még,c2782758b8a889f78b3a81abd34c36dd965fa767ea2c717007cc077da72d45a5
@@ -303,7 +303,7 @@ Card#,Artist,Title,Year,URL,Youtube-Title,Hashed Info
 302,Korda György,Lady N,1977,https://www.youtube.com/watch?v=GgBbCwIkHmg,Lady N,1ce4df84d2362064a1e1e3a2b4ac41a1e9df504f57abe90917e776d3f5a84999
 303,David Bowie,Starman,1972,https://www.youtube.com/watch?v=aBKEt3MhNMM,Starman (2012 Remaster),950e51212ce0d57d772e44f8a500428909206d39e6b2805c3d65ed644b15512c
 304,Madness,Our House,1983,https://www.youtube.com/watch?v=GWubi_Eq0Ek,Our House (2009 Remaster),f3f402209b28e7d62bac9982cd9b2c770530e53e523f0954e9647ca05d02d9d2
-305,Donna Summer,Hot Stuff,1979,https://www.youtube.com/watch?v=0YLiTLmrMZA,Hot Stuff,8025b95a288304fcc5e4b51e1281adf4ef031690f927bd1d39108fba3148fe53
+305,Donna Summer,Hot Stuff,1979,https://www.youtube.com/watch?v=0YLiTLmrMZA,Hot Stuff (Single Version),a8c0b72b75d94c85f3a4f7b28a17569ffda8f96b8d4fb111acd0757d7b400a8d
 306,Soltész Rezső,Szóljon hangosan az ének,1982,https://www.youtube.com/watch?v=NIux6VYzgBI,Szóljon hangosan az ének,3f9fe54f71d120c7cdc74d08a385a5b24d21a9d9a24525778e2dbe88a588ddf9
 307,Koncz Zsuzsa,Keresem a szót,1978,https://www.youtube.com/watch?v=5w62kyfs_RI,Keresem a szót,dc7787083093356742f9bb8ca2a1c340b0f80aea552c3cbdd1343c668a6b49b5
 308,Honeybeast,A legnagyobb hős,2014,https://www.youtube.com/watch?v=TMfL-0IwgtE,A legnagyobb hős,66aa656d0fdea8f5754f663d463740948a2488d18437b2d6e1a297bbbc2f6e33

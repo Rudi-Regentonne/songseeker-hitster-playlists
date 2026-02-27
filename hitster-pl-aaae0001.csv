@@ -28,7 +28,7 @@ Card#,Artist,Title,Year,URL,Youtube-Title,Hashed Info
 27,Twenty One Pilots,Stressed Out,2015,https://www.youtube.com/watch?v=pXRviuL6vMY,twenty one pilots: Stressed Out [OFFICIAL VIDEO],bd401f98ccf899e67c96cdca808b41e8959bdad82965ad910b4bd59459541380
 28,Rupert Holmes,Escape (The Piña Colada Song),1979,https://www.youtube.com/watch?v=FXG_I_tf_i4,Escape (The Pina Colada Song),937e8c54c029d4676dbf1910a07eb9ffec7f34a3a0ba99ff449384719c6335ca
 29,Las Ketchup,The Ketchup Song (Aserejé),2002,https://www.youtube.com/watch?v=AMT698ArSfQ,Las Ketchup - The Ketchup Song (Asereje) (Spanglish Version) (Official Video),22b4a31d2342495dd3e3d101cbc76310a95d81f945e6e4f596a6541ee210c982
-30,Dolly Parton,Jolene,1973,https://www.youtube.com/watch?v=Ixrje2rXLMA,Dolly Parton - Jolene (Audio),280999dd31c616447d892337cceb0ec01988f74f8414a3c96a55a55815493648
+30,Dolly Parton,Jolene,1973,https://www.youtube.com/watch?v=Ixrje2rXLMA,Dolly Parton - Jolene (Official Audio),25bc91ac134f62a5de76c133a2cae776063995aa00ba7ef1735018b8656d4574
 31,Alicia Keys,No One,2007,https://www.youtube.com/watch?v=rywUS-ohqeE,Alicia Keys - No One (Official Music Video),9bf34f95419ac6f733d3f2ffda9d0773f7e78c63b179ad776f11bfef931e40f4
 32,James Brown,I Got You (I Feel Good),1965,https://www.youtube.com/watch?v=pTdihu-mp90,James Brown - I Got You (I Feel Good) (Visualizer),af2e267a8f2475fb0278196a159630d2ab4f4b49f7f4144cf3612a2bc05351e7
 33,Leo Sayer,When I Need You,1977,https://www.youtube.com/watch?v=obC0MFHWJ0A,Leo Sayer - When I Need You (Official HD Music Video),3b63e9a9bb063cc4a61f12494b1cf37f703a70b53abff7423806002960fbd5d5
@@ -36,7 +36,7 @@ Card#,Artist,Title,Year,URL,Youtube-Title,Hashed Info
 35,The Archies,"Sugar, Sugar",1969,https://www.youtube.com/watch?v=5rmwDnOozWU,"Sugar, Sugar",6dba9295aa041fcbe181690fd86aab85c090f13da8c1435f930406a2541e5398
 36,Lindra Ronstadt,Blue Bayou,1977,https://www.youtube.com/watch?v=Kp9G0zkorio,Linda Ronstadt - Blue Bayou (Official Music Video),4ad883c17584389ddc8fef8653e797ddd2a055df5ef19fcc4af0fb65dbf7389e
 37,Lionel Richie,Dancing On The Ceiling,1986,https://www.youtube.com/watch?v=ovo6zwv6DX4,Lionel Richie - Dancing On The Ceiling,8af330205e51cfe7b5ac16b184ea2eb1664ddd7cacb2da579a78fae713202f7f
-38,Donna Summer,MacArthur Park,1978,https://www.youtube.com/watch?v=24jAy_T1U2k,MacArthur Park,3755ec0ec707ee89b2c9f86c1779093b967b18be0a94978f97a1ba583a01ae4c
+38,Donna Summer,MacArthur Park,1978,https://www.youtube.com/watch?v=24jAy_T1U2k,MacArthur Park (Single Version),4f9cee140082987f27a84486682ecd5812fb89bd35a273be05e261d339428a30
 39,Laura Branigan,Self Control,1984,https://www.youtube.com/watch?v=RP0_8J7uxhs,Laura Branigan - Self Control (Official Music Video),6153fefc1df874936f0d4b7af0ff130e2c5c4cfd7be97b9fc73fcf3d3da870f6
 40,The Weeknd,Blinding Lights,2020,https://www.youtube.com/watch?v=J7p4bzqLvCw,Blinding Lights,63a3690f287fde9223b1629de83699c87ee22fd946e9a57771b574350eca9785
 41,Vaya Con Dios,Nah Neh Nah,1990,https://www.youtube.com/watch?v=7LUm-E4GPU8,Vaya con dios - Nah neh nah,85cc64cf6ed7c2434d269be5fb92b1ee32641f4921700230c6b446d1272a7209
@@ -226,7 +226,7 @@ Card#,Artist,Title,Year,URL,Youtube-Title,Hashed Info
 225,Fatboy Slim,Praise You,1998,https://www.youtube.com/watch?v=ruAi4VBoBSM,Fatboy Slim - Praise You [Official Video],d53e45e3977a93b5ddac2710bc8571b7bbf3ecb85ae370213987548d1f287bf5
 226,Tears For Fears,Shout,1984,https://www.youtube.com/watch?v=Ye7FKc1JQe4,Tears For Fears - Shout (Official Music Video),5367d47b39573af9f2e13c6180ed5246511870d3da1caf74d0d548cb3b517ff3
 227,The Beach Boys,Surfin' U.S.A.,1963,https://www.youtube.com/watch?v=KcZn05qxVgg,Surfin' U.S.A. (Stereo),102c56bcfc1b092cdf633cde6a9876bc015350f1893a03f66342043a0fc54e1c
-228,The Mamas & The Papas,"Monday, Monday",1966,https://www.youtube.com/watch?v=sWGh92O9kxU,"Monday, Monday",abdbffc2488bb5ec60289a5e4c93b84895fee72ad345632ad4c377453d7b5500
+228,The Mamas & The Papas,"Monday, Monday",1966,https://www.youtube.com/watch?v=sWGh92O9kxU,"Monday, Monday (Single Version)",980e40c138ce2548d0355757d15e2717a41cae5ce00cb752e01a265abe6bff64
 229,Jessie J (feat. B.O.B),Price Tag,2011,https://www.youtube.com/watch?v=wukKxuxKZMU,Price Tag - Jessie J (Lyrics) 🎵,fd0e0b122db9b884fb334ac184741951e608c8f32c0a7e8b3399837954178876
 230,Dion,The Wanderer,1961,https://www.youtube.com/watch?v=SbYa7NBYyRc,The Wanderer,30f85eb0e4d108a63a7f71beaf20508c7e1a47526a3c3c49f7c67c19f3a1e1dd
 231,Ace Of Base,All That She Wants,1992,https://www.youtube.com/watch?v=7VBI2wcKxGU,All That She Wants Lyrics - Ace of Base - Lyric Top Song,e17dd03c760d975b246d17d1bfc41faf602567b694d1dbaa6169821fd500f4b1
@@ -247,7 +247,7 @@ Card#,Artist,Title,Year,URL,Youtube-Title,Hashed Info
 246,Jay-Z & Linkin Park,Numb/Encore,2004,https://www.youtube.com/watch?v=_1oO4wzPCmE,Numb / Encore (Official Audio) - Linkin Park / JAY-Z,0757764595b0dc4865b1402f282286e562751f6bc3d745dda43f1ddc18f646e9
 247,Dua Lipa,Break My Heart,2020,https://www.youtube.com/watch?v=Nj2U6rhnucI,Dua Lipa - Break My Heart (Official Video),d9e434efde0a04e878c73b356dac6822f82ea6cf7f6d8df172be0c64be3b618a
 248,Chubby Checker,The Twist,1960,https://www.youtube.com/watch?v=-CCgDvUM4TM,Chubby Checker - The Twist (Official Music Video),3e45f1259620f3c41277f13823d65da880a07a474afb1489b8417eb4c6016734
-249,Hanson,MMMBop,1997,https://www.youtube.com/watch?v=XEebGBGZwj8,MMMBop,8ca8661197aab80f327338c926695d7413f3ac8391eb078fcadb79812fac23e8
+249,Hanson,MMMBop,1997,https://www.youtube.com/watch?v=XEebGBGZwj8,MMMBop (Single Version),4386454f5be68418d963eb630a2f2b5c0bdb20cb63644a0e48fda039f5c2ea9f
 250,Simply Red,Holding Back The Years,1985,https://www.youtube.com/watch?v=yG07WSu7Q9w,Simply Red - Holding Back The Years (Official 4K Remaster),7e8a2644fccfc5770411a7d7edf65ab4a710dc6b09e18146f588368ada7e2acd
 251,Jennifer Lopez,If You Had My Love,1999,https://www.youtube.com/watch?v=tT5g7I-Itc8,If You Had My Love,bf5fa0d70d2072a84200757a86bb74a537d8c210936cb651f9ed13dc433879dd
 252,Alphaville,Forever Young,1984,https://www.youtube.com/watch?v=t1TcDHrkQYg,Alphaville - Forever Young ~Official Video,3f1f69bc30822068f62216b4835683159b2562b0acc83672c782435cc38adc84
