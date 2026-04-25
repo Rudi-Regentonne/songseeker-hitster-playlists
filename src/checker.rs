@@ -246,10 +246,7 @@ impl Checker {
 
             for id in chunk {
                 if !returned_ids.contains(id) {
-                    log::warn!(
-                        "YouTube API hat keine Daten für Video-ID '{}' zurückgegeben (Vermutlich gelöscht/privat).",
-                        id
-                    );
+                    log::warn!("YouTube API did not return metadata for '{}'", id);
                 }
             }
             for item in resp.items {
