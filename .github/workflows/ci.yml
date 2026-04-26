@@ -1,0 +1,38 @@
+name: Rust CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    branches: ["**"]
+  schedule:
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+
+jobs:
+  check:
+    name: Validate Playlists
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Rust Cache
+        uses: Swatinem/rust-cache@v2
+
+      - name: Rust Toolchain installieren
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: stable
+          components: clippy
+
+      - name: Kompilieren
+        run: cargo build --release
+
+      - name: Playlist Check
+
+        env:
+          API_TOKEN: ${{ secrets.API_TOKEN }}
+        run: cargo run --release -- --validate --availability

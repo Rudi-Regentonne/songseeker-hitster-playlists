@@ -11,6 +11,8 @@ mod record;
 mod song;
 use clap::Parser;
 use log::info;
+use std::sync::atomic::AtomicUsize;
+use std::sync::atomic::Ordering;
 
 #[derive(Parser, Debug)]
 #[command(version, about, long_about = None)]
@@ -52,6 +54,9 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let args = Args::parse();
     env_logger::Builder::from_env(env_logger::Env::default().default_filter_or(&args.log_level))
         .init();
+
+    let error_count = AtomicUsize::new(0);
+
     let all_sets = Record::get_sets(&args.playlists)?;
 
     let sets: Vec<Record> = if args.file.is_empty() {
@@ -64,9 +69,11 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     };
 
     if args.validate {
-        sets.clone()
-            .into_par_iter()
-            .for_each(|record| check_set(&record.file, &args.input_folder));
+        sets.clone().into_par_iter().for_each(|record| {
+            if !check_set(&record.file, &args.input_folder) {
+                error_count.fetch_add(1, Ordering::SeqCst);
+            }
+        });
     }
     if args.metadata || args.availability || args.update_urls {
         let checker = Checker::new();
@@ -75,10 +82,13 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             let mut parsed = ParsedRecord::from_record(set.clone(), &args.input_folder);
             if parsed.songs.is_empty() {
                 warn!("No songs found for {} - skipping", set.game);
+                error_count.fetch_add(1, Ordering::SeqCst);
                 continue;
             }
 
-            parsed.validate_urls();
+            if !parsed.validate_urls() {
+                error_count.fetch_add(1, Ordering::SeqCst);
+            }
 
             if args.metadata {
                 let n = checker.update_metadata(&mut parsed.songs).await?;
@@ -97,6 +107,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                         args.country, song.artist, song.title, song.url
                     );
 
+                    error_count.fetch_add(1, Ordering::SeqCst);
                     if args.update_urls {
                         checker.update_song_url(song).await?;
                         info!("New Url: {}", song.url);
@@ -107,6 +118,9 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             }
         }
     }
-
+    let final_errors = error_count.load(Ordering::SeqCst);
+    if final_errors > 0 {
+        std::process::exit(1);
+    }
     Ok(())
 }

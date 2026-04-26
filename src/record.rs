@@ -1,6 +1,9 @@
 use log::{debug, error};
 use rayon::iter::{IntoParallelIterator, ParallelIterator};
-use std::collections::{HashMap, HashSet};
+use std::{
+    collections::{HashMap, HashSet},
+    sync::atomic::{AtomicUsize, Ordering},
+};
 
 use crate::{checker::Checker, csv_parser::read_csv, song::Song};
 
@@ -56,7 +59,8 @@ impl ParsedRecord {
         wtr.flush()?;
         Ok(())
     }
-    pub fn validate_urls(&self) {
+    pub fn validate_urls(&self) -> bool {
+        let error_count = AtomicUsize::new(0);
         <Vec<Song> as Clone>::clone(&self.songs)
             .into_par_iter()
             .for_each(|record| {
@@ -66,8 +70,10 @@ impl ParsedRecord {
                         "File: {}, Song: {}, Artist: {} failed to parse URL: {}",
                         self.file, record.title, record.artist, record.url
                     );
+                    error_count.fetch_add(1, Ordering::SeqCst);
                 }
             });
+        error_count.load(Ordering::SeqCst) == 0
     }
     pub async fn check_availability(
         &self,

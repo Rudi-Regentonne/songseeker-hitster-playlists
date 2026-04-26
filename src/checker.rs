@@ -4,7 +4,9 @@ use log::debug;
 use rayon::iter::{IntoParallelIterator, IntoParallelRefIterator, ParallelIterator};
 use serde::Deserialize;
 use std::collections::HashMap;
+use std::sync::atomic::AtomicUsize;
 
+use std::sync::atomic::Ordering;
 #[derive(Deserialize, Debug)]
 struct VideoResponse {
     items: Vec<VideoItem>,
@@ -61,17 +63,17 @@ pub struct SearchId {
     #[serde(rename = "videoId")]
     pub video_id: String,
 }
-pub fn check_set(filename: &str, folder: &str) {
+pub fn check_set(filename: &str, folder: &str) -> bool {
     let path = format!("{}/{}", folder.trim_end_matches('/'), filename);
 
     let records: Vec<Song> = match read_csv(&path) {
         Ok(data) => data,
         Err(e) => {
             log::error!("skipping {} could not be read: ({})", filename, e);
-            return;
+            return false;
         }
     };
-
+    let error_count = AtomicUsize::new(0);
     records.into_par_iter().for_each(|record| {
         let id = record.get_yt_id();
         if let Some(_) = id {
@@ -82,6 +84,7 @@ pub fn check_set(filename: &str, folder: &str) {
                     record.title,
                     record.artist
                 );
+                error_count.fetch_add(1, Ordering::SeqCst);
             }
         } else {
             log::error!(
@@ -91,8 +94,18 @@ pub fn check_set(filename: &str, folder: &str) {
                 record.artist,
                 record.url
             );
+            error_count.fetch_add(1, Ordering::SeqCst);
         }
     });
+    if error_count.load(Ordering::SeqCst) > 0 {
+        log::error!(
+            "{} had {} errors",
+            filename,
+            error_count.load(Ordering::SeqCst)
+        );
+        return false;
+    }
+    true
 }
 pub struct Checker {
     api_key: String,
@@ -101,7 +114,7 @@ pub struct Checker {
 impl Checker {
     pub fn new() -> Self {
         dotenv::dotenv().ok();
-        let api_key = std::env::var("API_KEY").expect("API_KEY nicht gefunden");
+        let api_key = std::env::var("API_KEY").expect("API_KEY not found");
         Self {
             api_key,
             client: reqwest::Client::new(),
