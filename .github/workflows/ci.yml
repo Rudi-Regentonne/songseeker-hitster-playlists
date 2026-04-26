@@ -34,5 +34,5 @@ jobs:
       - name: Playlist Check
 
         env:
-          API_TOKEN: ${{ secrets.API_TOKEN }}
+          API_KEY: ${{ secrets.API_KEY }}
         run: cargo run --release -- --validate --availability
